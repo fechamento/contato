@@ -1,66 +1,104 @@
 # contato
-PS C:\Users\SAMSUNG\Desktop\Landing Page> ^C
-PS C:\Users\SAMSUNG\Desktop\Landing Page> Set-Location -Path 'C:\Users\SAMSUNG\Desktop\Landing Page'; Write-Host "`n=== Status do Git ==="; 
-git status; Write-Host "`n=== Configuração do Remote ==="; git remote 
--v
 
-=== Status do Git ===
-On branch main
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operação Fechamento - Encontre seu imóvel ideal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f8f9fa; color: #222; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    header h1 { font-size: 1.4rem; color: #007bff; }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500; }
+    .hero { text-align: center; padding: 5rem 10%; background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; color: #fff; position: relative; }
+    .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); }
+    .hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+    .hero h2 { font-size: 2.4rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 2rem; }
+    .whatsapp-btn { background: #25D366; color: white; padding: 14px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    .whatsapp-btn:hover { background: #1eb45f; }
+    section { padding: 4rem 10%; text-align: center; }
+    section h3 { font-size: 1.8rem; margin-bottom: 2rem; color: #007bff; }
+    form { display: flex; flex-direction: column; max-width: 400px; margin: 0 auto; gap: 1rem; }
+    input, button { padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; }
+    button { background: #007bff; color: #fff; border: none; cursor: pointer; font-weight: 600; }
+    button:hover { background: #0056b3; }
+    footer { text-align: center; padding: 2rem; background: #fff; margin-top: 3rem; box-shadow: 0 -2px 5px rgba(0,0,0,0.05); }
+    .socials a { margin: 0 10px; text-decoration: none; color: #007bff; font-weight: 500; }
 
-No commits yet
+    /* Botão flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: 0.3s;
+      z-index: 1000;
+    }
+    .whatsapp-float:hover { background-color: #1eb45f; transform: scale(1.1); }
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   index.html
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 1.8rem; }
+      header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Operação Fechamento</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)      
-        .vscode/
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Encontre o imóvel dos seus sonhos</h2>
+      <p>Condições especiais direto com a construtora. Financiamento fácil e localização privilegiada.</p>
+      <a href="https://wa.me/5521999999999" target="_blank" class="whatsapp-btn">💬 Fale com um corretor agora</a>
+    </div>
+  </section>
 
-=== Configuração do Remote ===
-origin  https://github.com/operacaofechamento/contato.git (fetch)     
-origin  https://github.com/operacaofechamento/contato.git (push)      
-PS C:\Users\SAMSUNG\Desktop\Landing Page> git config --get user.name; 
-git config --get user.email
-PS C:\Users\SAMSUNG\Desktop\Landing Page> git config --global user.name "operacaofechamento"; git config --global user.email "leosiqueira2006@gmail.com"; Write-Host "`n=== Configurações do usuário ==="; git config --get user.name; git config --get user.email; Write-Host "`n=== Criando commit inicial ==="; git add .; git commit -m "Initial commit"; 
-git branch -M main; Write-Host "`n=== Fazendo push ==="; git push -u origin main
+  <section id="sobre">
+    <h3>Por que escolher a Operação Fechamento?</h3>
+    <p>Equipe especializada em imóveis na planta, prontos e oportunidades exclusivas da Cury Construtora.</p>
+  </section>
 
-=== Configurações do usuário ===
-operacaofechamento
-leosiqueira2006@gmail.com
+  <section id="contato">
+    <h3>Cadastre-se e receba nossas melhores ofertas</h3>
+    <form action="https://formspree.io/f/mkgwnyzy" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="tel" name="telefone" placeholder="Seu WhatsApp" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-=== Criando commit inicial ===
-[main (root-commit) 56de814] Initial commit
- 4 files changed, 129 insertions(+)
- create mode 100644 .vscode/fechamento
- create mode 100644 .vscode/launch.json
- create mode 100644 README.md
- create mode 100644 index.html
+  <footer>
+    <p>© 2025 Equipe Fechamento. Todos os direitos reservados.</p>
+    <div class="socials">
+      <a href="https://instagram.com/seuinsta" target="_blank">Instagram</a>
+      <a href="https://facebook.com/seufb" target="_blank">Facebook</a>
+      <a href="https://wa.me/5521999999999" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
 
-=== Fazendo push ===
-info: please complete authentication in your browser...
-Counting objects: 100% (7/7), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (7/7), 4.73 KiB | 372.00 KiB/s, done.
-Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To https://github.com/operacaofechamento/contato.git
- * [new branch]      main -> main
-branch 'main' set up to track 'origin/main'.
-PS C:\Users\SAMSUNG\Desktop\Landing Page> ^C
-PS C:\Users\SAMSUNG\Desktop\Landing Page> git status; Write-Host "`n=== Último commit ==="; git log --oneline -n 1; Write-Host "`n=== Tentando push novamente ==="; git push -u origin main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-
-=== Último commit ===
-56de814 (HEAD -> main, origin/main) Initial commit
-
-=== Tentando push novamente ===
-branch 'main' set up to track 'origin/main'.
-Everything up-to-date
-PS C:\Users\SAMSUNG\Desktop\Landing Page> git remote set-url origin https://github.com/fechamento/contato.git; git push -u origin main      
-remote: Permission to fechamento/contato.git denied to operacaofechamento.
-fatal: unable to access 'https://github.com/fechamento/contato.git/': 
-The requested URL returned error: 403
-PS C:\Users\SAMSUNG\Desktop\Landing Page> 
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5521999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">💬</a>
+</body>
+</html>
